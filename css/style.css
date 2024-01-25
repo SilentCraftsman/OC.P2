@@ -47,7 +47,7 @@ li {
 
 /* HEADER */
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -252,9 +252,9 @@ i.fa-solid.search_filters_filter_icon {
 
 /* SEARCH */
 
-/* HOSTING */
+/* Hébergement */
 
-.hosting {
+.hebergement {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -338,7 +338,9 @@ i.fa-solid.search_filters_filter_icon {
   padding-left: 5px;
 }
 
-/* Hebergement MAIN */
+/*Hébergement*/
+
+/* Hébergement MAIN */
 
 .hosting_main {
   margin: 20px 15px 20px 0px;
@@ -377,11 +379,11 @@ i.fa-solid.search_filters_filter_icon {
   font-size: 18px;
 }
 
-/* Hebergemnt MAIN */
+/* Hébergement MAIN */
 
 /* HOSTING POPULAR */
 
-.hosting_popular {
+.hebergement_popular {
   margin: 20px 0px 20px 15px;
   padding-bottom: 15px;
   flex: 1;
@@ -524,7 +526,7 @@ i.fa-solid.search_filters_filter_icon {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /*Hebergements et "Les plus populaires"*/
-  .hosting {
+  .hebergement {
     display: flex;
     flex-direction: column;
   }
