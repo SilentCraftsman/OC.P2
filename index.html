@@ -19,13 +19,21 @@
   <body>
     <!-- Header -->
     <header>
-      <img
-        src="images/logo/Booki.png"
-        alt="logo du site - booki"
-        class="header_img" />
+      <div class="header_img_container">
+        <img
+          src="images/logo/Booki.png"
+          alt="logo du site - booki"
+          class="header_img" />
+      </div>
       <nav class="header_nav">
-        <a href="#hebergement" class="header_nav_link1">Hébergements</a>
-        <a href="#activity" class="header_nav_link2">Activités</a>
+        <ul class="header_list">
+          <li class="header_link1">
+            <a href="#hebergement" class="header_nav_link1">Hébergements</a>
+          </li>
+          <li class="header_link2">
+            <a href="#activity" class="header_nav_link2">Activités</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- Header -->
@@ -56,30 +64,33 @@
             value="Marseille, France" />
           <button class="search_form_submitinput">
             <p class="search_form_submitinput_text">Rechercher</p>
-            <!--Ne pas oublier l'icône pour la version mobile-->
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
         <!--Filtres-->
         <div class="search_filters">
-          <p class="search_filters_title">Filtres</p>
-
-          <button class="search_filters_filter">
-            <i class="fa-solid fa-money-bill-wave search_filters_filter_icon">
-            </i>
-            <p class="search_filters_filter_title">Économique</p>
-          </button>
-          <button class="search_filters_filter">
-            <i class="fa-solid fa-person search_filters_filter_icon"></i>
-            <p class="search_filters_filter_title">Familial</p>
-          </button>
-          <button class="search_filters_filter">
-            <i class="fa-solid fa-heart search_filters_filter_icon"></i>
-            <p class="search_filters_filter_title">Romantique</p>
-          </button>
-          <button class="search_filters_filter">
-            <i class="fa-solid fa-fire search_filters_filter_icon"></i>
-            <p class="search_filters_filter_title">Nos pépites</p>
-          </button>
+          <div class="search_filters_title_container">
+            <p class="search_filters_title">Filtres</p>
+          </div>
+          <div class="search_button_container">
+            <button class="search_filters_filter">
+              <i class="fa-solid fa-money-bill-wave search_filters_filter_icon">
+              </i>
+              <p class="search_filters_filter_title">Économique</p>
+            </button>
+            <button class="search_filters_filter">
+              <i class="fa-solid fa-person search_filters_filter_icon"></i>
+              <p class="search_filters_filter_title">Familial</p>
+            </button>
+            <button class="search_filters_filter">
+              <i class="fa-solid fa-heart search_filters_filter_icon"></i>
+              <p class="search_filters_filter_title">Romantique</p>
+            </button>
+            <button class="search_filters_filter">
+              <i class="fa-solid fa-fire search_filters_filter_icon"></i>
+              <p class="search_filters_filter_title">Nos pépites</p>
+            </button>
+          </div>
         </div>
         <!--Résultat de la recherche-->
         <div class="search_result">
@@ -95,11 +106,11 @@
       <!-- Hébergements -->
       <section class="hebergement" id="hebergement">
         <div class="hosting_main hosting_background">
-          <header class="hosting_main_header">
+          <div class="hosting_main_header">
             <h2 class="hosting_main_header_title hosting_title">
               Hébergements à Marseille
             </h2>
-          </header>
+          </div>
           <div class="hebergement_main_cards">
             <!--Hôtel du port-->
             <article class="hebergement_main_card hosting_card">
@@ -296,14 +307,14 @@
         </div>
         <!--Les plus populaires-->
         <aside class="hebergement_popular hosting_background">
-          <header class="hosting_popular_header">
+          <div class="hosting_popular_header">
             <h2 class="hosting_popular_header_title hosting_title">
               Les plus populaires
             </h2>
             <i
               class="fa-solid fa-chart-line popular_icon"
               aria-hidden="true"></i>
-          </header>
+          </div>
           <div class="hosting_popular_cards">
             <!--Hôtel Le soleil du matin-->
             <article class="hosting_popular_card hosting_card">
@@ -322,7 +333,9 @@
                       </h3>
                       <p class="hosting_popular_card_from hosting_card_from">
                         Nuit à partir de
-                        <span class="hosting_popular_card_from_price">25€</span>
+                        <span class="hosting_popular_card_from_price"
+                          >128€</span
+                        >
                       </p>
                     </div>
                     <div class="hosting_card_stars">
@@ -408,7 +421,7 @@
           <h3 class="activity_header_title">Activités à Marseille</h3>
         </header>
         <div class="activity_cards">
-          <!--Vieux Port-->
+          <!--Vieux-Port-->
           <a href="#" class="activity_card activity_card_large">
             <figure class="activity_card_fig">
               <img
@@ -416,11 +429,11 @@
                 src="images/activites/reno-laithienne.jpg"
                 alt="Le Vieux Port de Marseille" />
               <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">Vieux Port</h4>
+                <h4 class="activity_card_fig_caption_title">Vieux-Port</h4>
               </figcaption>
             </figure>
           </a>
-          <!--Fort de Pomègue-->
+          <!--Fort de Pomègues-->
           <a href="#" class="activity_card activity_card_large">
             <figure class="activity_card_fig">
               <img
@@ -428,11 +441,13 @@
                 src="./images/activites/paul-hermann.jpg"
                 alt="Le Fort de Pomègues" />
               <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">Fort de Pomègue</h4>
+                <h4 class="activity_card_fig_caption_title">
+                  Fort de Pomègues
+                </h4>
               </figcaption>
             </figure>
           </a>
-          <!--Parc National des Calanques-->
+          <!--Parc national des Calanques-->
           <a href="#" class="activity_card activity_card_large">
             <figure class="activity_card_fig">
               <img
@@ -441,7 +456,7 @@
                 alt="Calanques de Sormiou" />
               <figcaption class="activity_card_fig_caption">
                 <h4 class="activity_card_fig_caption_title">
-                  Parc National des Calanques
+                  Parc national des Calanques
                 </h4>
               </figcaption>
             </figure>
@@ -472,15 +487,15 @@
           <h5 class="footer_container_title">À propos</h5>
           <ul class="footer_container_list">
             <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et Confidentialité</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
           </ul>
         </div>
         <div class="footer_container">
           <h5 class="footer_container_title">Nos hébergements</h5>
           <ul class="footer_container_list">
             <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
           </ul>
         </div>
         <div class="footer_container">
