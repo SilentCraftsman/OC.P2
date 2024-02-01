@@ -31,7 +31,7 @@
             <a href="#hebergement" class="header_nav_link1">Hébergements</a>
           </li>
           <li class="header_link2">
-            <a href="#activity" class="header_nav_link2">Activités</a>
+            <a href="#activites" class="header_nav_link2">Activités</a>
           </li>
         </ul>
       </nav>
@@ -40,19 +40,19 @@
     <!-- Main -->
     <main>
       <!-- Rechercher -->
-      <section class="search">
-        <header class="search_header">
-          <h1 class="search_header_title">
+      <section class="recherche">
+        <header class="recherche_header">
+          <h1 class="recherche_header_title">
             Trouvez votre hébergement pour des vacances de rêve
           </h1>
-          <p class="search_header_subtitle">
+          <p class="recherche_header_subtitle">
             En plein centre ville ou en pleine nature
           </p>
         </header>
         <!--Formulaire-->
-        <form class="search_form" method="GET" action="#">
+        <form class="recherche_form" method="GET" action="#">
           <label for="search_icon">
-            <div class="search_form_icon">
+            <div class="recherche_form_icon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
           </label>
@@ -68,9 +68,9 @@
           </button>
         </form>
         <!--Filtres-->
-        <div class="search_filters">
-          <div class="search_filters_title_container">
-            <p class="search_filters_title">Filtres</p>
+        <div class="recherche_filters">
+          <div class="recherche_filters_title_container">
+            <p class="recherche_filters_title">Filtres</p>
           </div>
           <div class="search_button_container">
             <button class="search_filters_filter">
@@ -105,9 +105,9 @@
       <!-- Rechercher -->
       <!-- Hébergements -->
       <section class="hebergement" id="hebergement">
-        <div class="hosting_main hosting_background">
-          <div class="hosting_main_header">
-            <h2 class="hosting_main_header_title hosting_title">
+        <div class="hebergement_main hebergement_background">
+          <div class="hebergement_main_header">
+            <h2 class="hebergement_main_header_title hosting_title">
               Hébergements à Marseille
             </h2>
           </div>
@@ -306,7 +306,7 @@
           </footer>
         </div>
         <!--Les plus populaires-->
-        <aside class="hebergement_popular hosting_background">
+        <aside class="hebergement_popular hebergement_background">
           <div class="hosting_popular_header">
             <h2 class="hosting_popular_header_title hosting_title">
               Les plus populaires
@@ -416,66 +416,58 @@
       </section>
       <!-- Hébergements -->
       <!-- Activités -->
-      <section class="activity" id="activity">
-        <header class="activity_header">
-          <h3 class="activity_header_title">Activités à Marseille</h3>
-        </header>
-        <div class="activity_cards">
-          <!--Vieux-Port-->
-          <a href="#" class="activity_card activity_card_large">
-            <figure class="activity_card_fig">
-              <img
-                class="activity_card_fig_img activity_card_fig_img_large"
-                src="images/activites/reno-laithienne.jpg"
-                alt="Le Vieux Port de Marseille" />
-              <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">Vieux-Port</h4>
-              </figcaption>
-            </figure>
-          </a>
-          <!--Fort de Pomègues-->
-          <a href="#" class="activity_card activity_card_large">
-            <figure class="activity_card_fig">
-              <img
-                class="activity_card_fig_img activity_card_fig_img_large"
-                src="./images/activites/paul-hermann.jpg"
-                alt="Le Fort de Pomègues" />
-              <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">
-                  Fort de Pomègues
-                </h4>
-              </figcaption>
-            </figure>
-          </a>
-          <!--Parc national des Calanques-->
-          <a href="#" class="activity_card activity_card_large">
-            <figure class="activity_card_fig">
-              <img
-                class="activity_card_fig_img activity_card_fig_img_large"
-                src="./images/activites/kilyan-sockalingum.jpg"
-                alt="Calanques de Sormiou" />
-              <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">
-                  Parc national des Calanques
-                </h4>
-              </figcaption>
-            </figure>
-          </a>
-          <!--Notre-Dame-de-la-Garde-->
-          <a href="#" class="activity_card activity_card_large">
-            <figure class="activity_card_fig">
-              <img
-                class="activity_card_fig_img activity_card_fig_img_large"
-                src="./images/activites/florian-wehde.jpg"
-                alt="Notre-Dame-de-la-Garde" />
-              <figcaption class="activity_card_fig_caption">
-                <h4 class="activity_card_fig_caption_title">
-                  Notre-Dame-de-la-Garde
-                </h4>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
+      <section class="activity" id="activites">
+        <article class="activites">
+          <div class="titre-activites">
+            <h2>Activités à Marseille</h2>
+          </div>
+          <div class="activity-container">
+            <!--Vieux-Port-->
+            <div class="card_activity">
+              <a href="#"
+                ><img
+                  src="./images/activites/reno-laithienne.jpg"
+                  alt="Vieux port" />
+                <div class="activity-title-container">
+                  <h4>Vieux-Port</h4>
+                </div>
+              </a>
+            </div>
+            <!--Fort de Pomègues-->
+            <div class="card_activity">
+              <a href="#"
+                ><img
+                  src="./images/activites/paul-hermann.jpg"
+                  alt="Fort de Pomègues" />
+                <div class="activity-title-container">
+                  <h4>Fort de Pomègues</h4>
+                </div>
+              </a>
+            </div>
+            <!--Parc national des Calanques-->
+            <div class="card_activity">
+              <a href="#"
+                ><img
+                  src="./images/activites/kilyan-sockalingum.jpg"
+                  alt="Parc national des Calanques" />
+                <div class="activity-title-container">
+                  <h4>Parc national des Calanques</h4>
+                </div>
+              </a>
+            </div>
+            <!--Notre-Dame-de-la-Garde-->
+            <div class="card_activity">
+              <a href="#"
+                ><img
+                  src="./images/activites/florian-wehde.jpg"
+                  alt="Notre-Dame-de-la-Garde" />
+                <div class="activity-title-container">
+                  <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
       </section>
       <!-- Activités -->
     </main>
