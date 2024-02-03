@@ -326,7 +326,7 @@ i.fa-solid.search_filters_filter_icon {
   margin: 20px 15px 20px 0px;
   padding-left: 10px;
   padding-right: 10px;
-  flex: 2;
+  flex: 75%;
 }
 
 .hebergement_main_cards {
@@ -367,7 +367,7 @@ i.fa-solid.search_filters_filter_icon {
   padding-right: 20px;
   margin: 20px 0px 20px 15px;
   padding-bottom: 10px;
-  flex: 1;
+  flex: 25%;
 }
 
 .hosting_popular_header {
@@ -493,8 +493,7 @@ i.fa-solid.search_filters_filter_icon {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media only screen and (max-width: 1024px),
-  only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   /*Hébergement (container) - Début*/
   .hebergement {
     display: flex;
