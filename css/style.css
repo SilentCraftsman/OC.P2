@@ -2,47 +2,38 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
 }
-
 html {
   min-width: 1000px;
   max-width: 1440px;
   margin: auto;
 }
-
 body {
   margin: -15px 0px 0px 0px;
 }
-
 main {
   padding: 0px 15px 0px 15px;
 }
-
 a,
 button,
 label {
   cursor: pointer;
 }
-
 a {
   text-decoration: none;
   color: black;
 }
-
 button {
   border: none;
   padding: 0;
 }
-
 li {
   list-style-type: none;
 }
-
 /* Global on page - Fin */
 /*Header - Début*/
 header {
@@ -63,13 +54,11 @@ header {
 
 .header_nav {
   display: flex;
-  flex-direction: row;
   padding-top: 15px;
 }
 
 .header_list {
   display: flex;
-  flex-direction: row;
 }
 
 .header_list .header_link1 {
@@ -107,7 +96,6 @@ header {
 /*Formulaire - Début*/
 .recherche_form {
   display: flex;
-  flex-direction: row;
 }
 
 .recherche_form_icon {
@@ -188,7 +176,6 @@ header {
 
 .search_button_container {
   display: flex;
-  flex-direction: row;
 }
 
 .search_filters_filter:hover {
@@ -254,7 +241,6 @@ i.fa-solid.search_filters_filter_icon {
 /*Hébergement (container) - Début*/
 .hebergement {
   display: flex;
-  flex-direction: row;
   margin-top: 8px;
 }
 
@@ -507,7 +493,8 @@ i.fa-solid.search_filters_filter_icon {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px),
+  only screen and (max-device-width: 1024px) {
   /*Hébergement (container) - Début*/
   .hebergement {
     display: flex;
