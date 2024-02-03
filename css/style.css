@@ -140,7 +140,7 @@ header {
   background-color: #deebff;
 }
 
-.search_form_submitinput p {
+.search_form_submitinput span {
   margin: 0;
   padding: 0px;
   font-size: 16px;

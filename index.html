@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -52,9 +53,9 @@
         <!--Formulaire-->
         <form class="recherche_form" method="GET" action="#">
           <label for="search_icon">
-            <div class="recherche_form_icon">
+            <span class="recherche_form_icon">
               <i class="fa-solid fa-location-dot"></i>
-            </div>
+            </span>
           </label>
           <input
             id="search_icon"
@@ -63,7 +64,7 @@
             type="text"
             value="Marseille, France" />
           <button class="search_form_submitinput">
-            <p class="search_form_submitinput_text"><span>Rechercher</span></p>
+            <span class="search_form_submitinput_text">Rechercher</span>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
@@ -76,19 +77,19 @@
             <button class="search_filters_filter">
               <i class="fa-solid fa-money-bill-wave search_filters_filter_icon">
               </i>
-              <p class="search_filters_filter_title">Économique</p>
+              <span class="search_filters_filter_title">Économique</span>
             </button>
             <button class="search_filters_filter">
               <i class="fa-solid fa-person search_filters_filter_icon"></i>
-              <p class="search_filters_filter_title">Familial</p>
+              <span class="search_filters_filter_title">Familial</span>
             </button>
             <button class="search_filters_filter">
               <i class="fa-solid fa-heart search_filters_filter_icon"></i>
-              <p class="search_filters_filter_title">Romantique</p>
+              <span class="search_filters_filter_title">Romantique</span>
             </button>
             <button class="search_filters_filter">
               <i class="fa-solid fa-fire search_filters_filter_icon"></i>
-              <p class="search_filters_filter_title">Nos pépites</p>
+              <span class="search_filters_filter_title">Nos pépites</span>
             </button>
           </div>
         </div>
@@ -417,10 +418,11 @@
       <!-- Hébergements -->
       <!-- Activités -->
       <section class="activity" id="activites">
+        <!--Correction de l'emplacement du h2-->
+        <div class="titre-activites">
+          <h2>Activités à Marseille</h2>
+        </div>
         <article class="activites">
-          <div class="titre-activites">
-            <h2>Activités à Marseille</h2>
-          </div>
           <div class="activity-container">
             <!--Vieux-Port-->
             <div class="card_activity">
