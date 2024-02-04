@@ -44,7 +44,7 @@ header {
 }
 
 .header_img {
-  object-fit: contain;
+  object-fit: cover;
   height: 19px;
   width: 3.81rem;
   padding: 40px;
@@ -308,6 +308,12 @@ i.fa-solid.search_filters_filter_icon {
   padding-left: 5px;
 }
 
+.hosting_card_stars1 {
+  font-size: 12px;
+  margin-top: auto;
+  padding-left: 10px;
+}
+
 .hosting_card_star_on {
   color: #0065fc;
 }
@@ -326,18 +332,18 @@ i.fa-solid.search_filters_filter_icon {
   margin: 20px 15px 20px 0px;
   padding-left: 10px;
   padding-right: 10px;
-  flex: 75%;
+  flex: 2;
 }
 
 .hebergement_main_cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
 }
 
 .hebergement_main_card {
-  width: 29.5%;
+  width: 30%;
   height: auto;
 }
 
@@ -367,7 +373,7 @@ i.fa-solid.search_filters_filter_icon {
   padding-right: 20px;
   margin: 20px 0px 20px 15px;
   padding-bottom: 10px;
-  flex: 25%;
+  flex: 1;
 }
 
 .hosting_popular_header {
@@ -446,7 +452,8 @@ i.fa-solid.search_filters_filter_icon {
 .activites .card_activity {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 21.6%;
+  height: 27.43rem;
 }
 
 .activites h4 {
@@ -504,6 +511,14 @@ i.fa-solid.search_filters_filter_icon {
     flex-direction: row;
   }
 
+  .hebergement_main_card {
+    width: 28.5%;
+  }
+
+  .hosting_popular_card {
+    width: 17.65rem;
+  }
+
   .hosting_popular_header {
     margin-bottom: -12px;
   }
@@ -532,6 +547,11 @@ i.fa-solid.search_filters_filter_icon {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+  }
+
+  .activites .card_activity {
+    width: 20.5%;
+    height: 270px;
   }
   /*Activités - Fin*/
   /*Footer - Début*/
@@ -566,6 +586,10 @@ i.fa-solid.search_filters_filter_icon {
     align-items: center;
     padding-right: 0;
     margin-bottom: 15px;
+  }
+
+  .header_img_container {
+    margin: 0 auto;
   }
 
   .header_img {
@@ -615,18 +639,17 @@ i.fa-solid.search_filters_filter_icon {
   }
   /*Header - Mobile - Fin*/
   /*Section search - Mobile - Début*/
-  .search_header {
+  .recherche_header_title {
     padding-left: 15px;
   }
 
-  .search_header_subtitle {
+  .recherche_header_subtitle {
     margin-left: -30px;
   }
 
-  .search_form {
+  .recherche_form {
     flex-direction: row;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
   }
 
   .search_form_searchinput {
@@ -674,7 +697,7 @@ i.fa-solid.search_filters_filter_icon {
   }
 
   .search_filters_filter_title {
-    margin-left: 9px;
+    margin-left: 12px;
     font-size: 14px;
   }
 
@@ -692,6 +715,10 @@ i.fa-solid.search_filters_filter_icon {
   }
   /*Filtre - Mobile - Fin*/
   /*Barre de résultat/Info - Mobile*/
+  .search_result {
+    margin-top: 40px;
+  }
+
   .search_result_icon {
     margin-bottom: 45px;
     margin-left: 12px;
@@ -717,16 +744,28 @@ i.fa-solid.search_filters_filter_icon {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .hosting_card {
+    margin: 8px 5px;
+  }
   /*"Les plus populaires" - Mobile - Début*/
+  .hosting_title {
+    padding-left: 10px;
+  }
+
   .hosting_popular_header {
     display: flex;
     flex-direction: row;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
   }
 
   .hosting_popular_cards {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    gap: 0px;
   }
 
   .hebergement_popular,
@@ -748,8 +787,8 @@ i.fa-solid.search_filters_filter_icon {
 
   .hebergement_main_header {
     margin-top: 40px;
-    margin-bottom: 5px;
-    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-right: 55px;
   }
 
   .hebergement_main_header h2 {
@@ -790,7 +829,8 @@ i.fa-solid.search_filters_filter_icon {
   }
 
   .titre-activites h2 {
-    margin-left: 8px;
+    margin-left: 3px;
+    font-size: 22px;
   }
 
   .card_activity {
@@ -800,7 +840,7 @@ i.fa-solid.search_filters_filter_icon {
   .activites .card_activity {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 98%;
   }
   /*Activités - Mobile - Fin*/
   /*Footer - Mobile - Début*/
