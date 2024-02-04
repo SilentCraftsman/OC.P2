@@ -453,7 +453,7 @@ i.fa-solid.search_filters_filter_icon {
   padding-left: 10px;
 }
 
-.activites h2 {
+.titre-activites h2 {
   padding-left: 20px;
   margin-bottom: 15px;
 }
@@ -787,6 +787,10 @@ i.fa-solid.search_filters_filter_icon {
     flex-wrap: wrap;
     margin: 0 20px;
     margin-bottom: 25px;
+  }
+
+  .titre-activites h2 {
+    margin-left: 8px;
   }
 
   .card_activity {
