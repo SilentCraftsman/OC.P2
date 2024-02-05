@@ -115,6 +115,7 @@ header {
 
 .search_form_searchinput {
   border: 2px solid #f2f2f2;
+  border-right: none;
   min-width: 14.5%;
   font-size: 18px;
   text-align: center;
@@ -436,11 +437,6 @@ i.fa-solid.search_filters_filter_icon {
   margin-bottom: 25px;
 }
 
-.activites {
-  display: flex;
-  flex-direction: column;
-}
-
 .card_activity {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -453,13 +449,12 @@ i.fa-solid.search_filters_filter_icon {
 }
 
 .activites .card_activity {
-  display: flex;
-  flex-direction: column;
   width: 21.6%;
   height: 27.43rem;
 }
 
 .activites h4 {
+  margin: 15px 0;
   padding-left: 10px;
 }
 
@@ -561,10 +556,6 @@ i.fa-solid.search_filters_filter_icon {
 }
 /*Responsive only*/
 @media only screen and (min-width: 767.99px) and (max-width: 1023.99px) {
-  .search_form_submitinput .fa-magnifying-glass {
-    display: none; /* Masque la loupe */
-  }
-
   html {
     min-width: 100%;
   }
