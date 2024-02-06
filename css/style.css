@@ -459,7 +459,7 @@ i.fa-solid.search_filters_filter_icon {
   height: 27.43rem;
 }
 
-.activites h4 {
+.activites h3 {
   margin: 15px 0;
   padding-left: 10px;
 }
@@ -491,6 +491,11 @@ i.fa-solid.search_filters_filter_icon {
   margin: 0px;
   padding-left: 40px;
   font-size: 18px;
+}
+
+.footer_container_title h4 {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer_container_list {
