@@ -403,7 +403,7 @@ i.fa-solid.search_filters_filter_icon {
 }
 
 .hosting_popular_card {
-  width: 95%;
+  width: 92%;
   height: auto;
 }
 
@@ -636,11 +636,17 @@ i.fa-solid.search_filters_filter_icon {
   /*Header - Mobile - Fin*/
   /*Section search - Mobile - Début*/
   .recherche_header_title {
-    padding-left: 15px;
+    margin: 0 5px;
+  }
+
+  .recherche_subtitle_container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .recherche_header_subtitle {
-    margin-left: -5px;
+    margin-left: 8px;
   }
 
   .recherche_form {
