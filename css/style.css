@@ -326,22 +326,22 @@ i.fa-solid.search_filters_filter_icon {
 }
 
 .hosting_card_stars {
-  font-size: 12px;
   margin-top: auto;
   padding-left: 5px;
 }
 
 .hosting_card_stars1 {
-  font-size: 12px;
-  margin-top: auto;
+  margin-top: -5px;
   padding-left: 10px;
 }
 
 .hosting_card_star_on {
+  font-size: 12px;
   color: #0065fc;
 }
 
 .hosting_card_star_off {
+  font-size: 12px;
   color: #dcdcdc;
 }
 
