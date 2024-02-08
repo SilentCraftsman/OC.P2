@@ -11,7 +11,7 @@
 }
 
 html {
-  min-width: 1000px;
+  min-width: 70%;
   max-width: 1440px;
   margin: auto;
 }
@@ -76,7 +76,7 @@ header {
 
 .header_nav_link1,
 .header_nav_link2 {
-  padding-top: 10px;
+  padding-top: 15px;
   font-weight: 400;
   border-top: 2px solid transparent;
   transition: border-top-color 0.3s ease;
@@ -133,6 +133,8 @@ header {
 }
 
 .search_form_searchinput {
+  padding-right: 10px;
+  padding-left: 10px;
   border: 2px solid #f2f2f2;
   /*Supprime la bordure de droite*/
   border-right: none;
@@ -590,19 +592,8 @@ i.fa-solid.search_filters_filter_icon {
   /*Footer - Fin*/
 }
 
-/*Responsive only*/
-@media only screen and (min-width: 767.99px) and (max-width: 1023.99px) {
-  html {
-    min-width: 100%;
-  }
-}
-
 /* Small devices (phones, less than 768px) */
-@media only screen and (max-width: 767.98px) {
-  html {
-    min-width: 100%;
-  }
-
+@media only screen and (max-width: 1023.99px) and (max-width: 767.98px) {
   main {
     padding: 0;
   }
@@ -668,18 +659,19 @@ i.fa-solid.search_filters_filter_icon {
 
   /*Header - Mobile - Fin*/
   /*Section search - Mobile - Début*/
+  .recherche_header {
+    margin: 0 20px;
+  }
+
   .recherche_header_title {
     margin: 0 5px;
   }
 
-  .recherche_subtitle_container {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .recherche_header_subtitle {
-    margin-left: 8px;
+  .recherche_subtitle_container p {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 8px;
+    margin-left: -18px;
   }
 
   .recherche_form {
@@ -826,8 +818,8 @@ i.fa-solid.search_filters_filter_icon {
 
   .hebergement_main_header {
     margin-top: 40px;
-    margin-bottom: 10px;
-    margin-right: 55px;
+    margin-left: 35px;
+    width: 100%;
   }
 
   .hebergement_main_header h2 {
@@ -839,23 +831,25 @@ i.fa-solid.search_filters_filter_icon {
   .hebergement_main_cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .hebergement_main_card {
-    width: 120%;
+    width: 89.33%;
   }
 
   /*Hébergement - Mobile - Fin*/
   /*Afficher Plus - Mobile - Début*/
   .hosting_main_card_footer {
+    width: 100%;
     white-space: nowrap;
-    margin-right: 220px;
     padding: 0;
     font-weight: 700;
   }
 
   .hosting_main_card_footer p {
-    margin: 5px;
+    font-size: 18px;
+    margin: 20px;
   }
 
   /*Afficher Plus - Mobile - Fin*/
